@@ -1,17 +1,14 @@
-import { HTMLAttributes, HtmlHTMLAttributes } from "react";
+import { HTMLAttributes } from "react";
 
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 type SkeletonProps = HTMLAttributes<HTMLDivElement>;
 
-export function Skeleton({className, ...props}: SkeletonProps) {
-    return (
-        <div
-        className={cn(
-            "animate-plus rounded-md bg-white/10",
-            className,
-        )}
-        {...props}
-        />
-    );
+export function Skeleton({ className, ...props }: SkeletonProps) {
+  return (
+    <div
+      className={cn("animate-pulse rounded-md bg-white/10", className)}
+      {...props}
+    />
+  );
 }

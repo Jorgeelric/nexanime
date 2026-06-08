@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "NexAnime",
-  description: "Streaming moderno de animes inspirado na experiência na netflix.",
+  description: "Streaming moderno de animes inspirado na experiência Netflix.",
 };
 
 export default function RootLayout({
@@ -12,10 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" >
-      <body>
-        {children}
-      </body>
+    <html lang="pt-BR">
+      <body>{children}</body>
     </html>
-  )
+  );
 }
